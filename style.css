@@ -1,0 +1,81 @@
+html{
+    background-color: #d2fbf7;
+}
+body{
+    width: 100%;
+}
+header .container{
+    padding: 80px 32px;
+    text-align: center;
+    /*background-image: url("pexels-balaji-srinivasan-3419791.jpg");*/
+    background-position: center;
+    background-size: 100% 500px;
+}
+
+svg{
+    width: 10px;
+}
+h1 {
+    /*background-color: #00b894;*/
+    border: 15px solid #3a00ff;
+    width: 480px;
+    height: 130px;
+    font-size: 50px;
+    box-shadow: 10px 4px #e55039;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+h1,h2{
+    color: #3a00ff;
+    font-family: 'Anuphan', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h2 {
+    font-size: 30px;
+    /*text-align: center;*/
+    /*justify-content: center;*/
+}
+header h2 {
+    max-width: 550px;
+    margin: 35px 350px;
+
+}
+
+.div p{
+color: #412d86;
+}
+a{
+    color: #00b894 ;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body.h2{
+    background-color: #e55039;
+}
+
+
