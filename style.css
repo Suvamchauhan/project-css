@@ -1,68 +1,90 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap');
+
+html {
     background-color: #d2fbf7;
 }
-body{
+
+body {
     width: 100%;
+    font-family: 'Baloo 2', cursive;
 }
-header .container{
-    padding: 80px 32px;
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
-    /*background-image: url("pexels-balaji-srinivasan-3419791.jpg");*/
+}
+
+
+header .container {
+    text-align: center;
     background-position: center;
     background-size: 100% 500px;
 }
 
-svg{
+svg {
     width: 10px;
 }
+
 h1 {
-    /*background-color: #00b894;*/
     border: 15px solid #3a00ff;
     width: 480px;
-    height: 130px;
+    min-height: 3em;
     font-size: 50px;
-    box-shadow: 10px 4px #e55039;
+    box-shadow: 10px 4px #d42257;
     margin: 0 auto;
     padding: 10px;
     text-align: center;
-}
-
-h1,h2{
+    font-family: 'Baloo 2', cursive;
     color: #3a00ff;
-    font-family: 'Anuphan', sans-serif;
-    text-align: center;
     justify-content: center;
     align-items: center;
     display: flex;
 }
-
-h2 {
-    font-size: 30px;
-    /*text-align: center;*/
-    /*justify-content: center;*/
+/* adding style for all the links within the header section */
+header .link-github, .link-guidelines, .link-downloadcss, .link-downloadhtml, .link-allstyles {
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    padding: 20px;
+    background-color: #3a00ff;
+    box-shadow: 4px 4px #d42257;
+    margin: 8px;
 }
+
 header h2 {
-    max-width: 550px;
-    margin: 35px 350px;
+    font-size: xxx-large;
+    margin: 30px auto;
 
 }
 
-.div p{
-color: #412d86;
+p {
+    color: #412d86;
+    margin: 30px auto;
+
 }
-a{
-    color: #00b894 ;
+
+a {
+    color: #00b894;
 }
+
+nav {
+    text-align: center;
+    font-size: medium;
+}
+
 nav ul {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
     list-style: none;
-    /*margin: 0;*/
-    /*padding: 0;*/
 }
 
 nav li {
-    margin-right: 10px;
+    margin: 50px 10px;
+    border-top: 10px solid #ab7b7b;
+}
+
+nav li:hover {
+    border-top: 10px solid #d42257;
 }
 
 nav a {
@@ -73,9 +95,194 @@ nav a {
     font-size: 20px;
     font-weight: bold;
 }
-
-body.h2{
-    background-color: #e55039;
+/* adding styles for the h2 headings in the about, guidelines, and contribute sections */
+#about h2, #guidelines h2, #contribute h2 {
+    margin: 0;
+    width: 100%;
+    background-color: #d42257;
+    color: white;
+    font-size: xxx-large;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center !important;
+}
+/* for the paragraphs and list items in the about, guidelines,contribute sections */
+#about p, #guidelines p, #contribute p, #contribute ol li {
+    font-size: larger;
+    text-align: left;
 }
 
+#about blockquote {
+    padding: 20px;
+    border: 4px solid #3a00ff;
+    box-shadow: 5px 5px #d42257;
+}
 
+#about blockquote p {
+    color: #4919ea;
+
+}
+
+#about ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    color: #3f2b85;
+    font-size: 20px;
+}
+
+#about ul li {
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+#guidelines h3 {
+    rotate: 350deg;
+    font-size: 30px;
+    background: linear-gradient(to left, #000000 70%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+#contribute {
+    margin-top: 50px;
+}
+
+#contribute h3 {
+    color: #4919ea;
+    text-align: left;
+    font-size: xx-large;
+}
+
+#files .container {
+    padding: 80px 80px 10px 80px;
+    width: 400px;
+    border: 3px dashed #d42257;
+}
+
+#files h3 {
+    display: none;
+}
+
+#files a.link-codepen {
+    line-height: 6em;
+}
+
+.profile h4 {
+    font-size: x-large;
+    color: #d42257;
+    font-weight: 500;
+}
+
+.profile ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    font-size: large;
+}
+
+.profile ul li {
+    margin: 10px;
+    color: #3a00ff;
+}
+
+.profile ul a {
+    color: #3a00ff;
+}
+
+.profile ul li span:first-child {
+    font-weight: 500;
+}
+
+.profile .container > a {
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #d42257;
+    padding: 5px;
+    color: #d42257;
+}
+
+.profile .container > a:hover {
+    box-shadow: 10px 4px #d42257;
+}
+
+#styles .features {
+    display: flex;
+    grid-gap: 1em;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+#styles .features li {
+    width: 250px;
+    padding: 80px 0;
+    background-color: #d42257;
+    font-weight: bold;
+}
+
+#styles .features li > span {
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    width: 200px;
+    padding: 20px;
+    color: #ffffff;
+}
+
+#styles .features li > span a {
+    text-decoration: none;
+    color: white;
+}
+
+.link-allstyles {
+    margin-top: 10px;
+}
+.page-footer{
+    background-color: #3a00ff;
+}
+.page-footer p{
+    color: white;
+}
+.page-footer a{
+    color: white;
+}
+.page-footer p:first-child {
+    font-weight: 500;
+    font-size: large;
+}
+/* adding styles for ul of page-footer*/
+.page-footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    color: #3f2b85;
+    font-size: 20px;
+}
+/*color for the link of li */
+.page-footer ul li a{
+    color: #3a00ff;
+}
+/* adding styles on ul li of page-footer*/
+.page-footer ul li {
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+    color: #3a00ff;
+}
+/* adding box-shadow for ul li of footer*/
+.page-footer ul li:hover {
+    box-shadow: #d42257 10px 4px;
+}
+
+.page-footer a {
+    text-decoration: none;
+}
+/* to hide the skip-link*/
+.skip-link {
+    display: none;
+}
